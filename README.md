@@ -6,7 +6,8 @@ cd frontend
 npm install
 npm start
 
-## Terminal 2: Backend Setup
+### Terminal 2: Backend Setup
+
 cd backend
 python -m venv venv
 
