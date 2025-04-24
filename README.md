@@ -6,10 +6,13 @@ npm start
 terminal 2
 cd backend
 python -m venv venv
-
-# Activate virtual environment
-# For Windows:
 venv\Scripts\activate
-# For macOS/Linux:
+python app.py
+
+=>Activate virtual environment
+For Windows:
+venv\Scripts\activate
+For macOS/Linux:
 source venv/bin/activate
+
 python app.py
