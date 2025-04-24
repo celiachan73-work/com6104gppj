@@ -1,0 +1,133 @@
+# Dependencies
+node_modules/
+**/node_modules/
+**/venv/
+**/.venv/
+/backend/venv/
+/.venv/
+/env/
+virtualenv/
+pip-log.txt
+.Python
+develop-eggs/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+
+# Environment variables
+.env
+.env.local
+.env.*
+**/.env
+/backend/.env
+.env.development
+.env.test
+.env.production
+
+# Build outputs
+build/
+dist/
+**/build/
+**/dist/
+**/build/static/
+.next/
+out/
+coverage/
+
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.installed.cfg
+*.manifest
+*.spec
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.classpath
+*.sublime-workspace
+*.sublime-project
+.settings/
+
+# OS specific
+.DS_Store
+Thumbs.db
+*.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+.directory
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+debug.log
+logs/
+
+# Cache and temp files
+.cache/
+.temp/
+.eslintcache
+.stylelintcache
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# Frontend specific
+.eslintrc
+.prettierrc
+.browserslistrc
+.editorconfig
+
+# Backend specific
+celerybeat-schedule
+*.pot
+*.pyc
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Version control
+.git/
+.gitattributes
+.gitmodules
+
+# Package managers
+package-lock.json
+yarn.lock
+.yarn-integrity
+.npm
+
+# Test coverage
+coverage/
+.nyc_output/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
