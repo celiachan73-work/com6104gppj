@@ -18,3 +18,10 @@ venv\Scripts\activate
 source venv/bin/activate
 
 python app.py
+
+=>create .env in the backend
+input the key
+HUGGINGFACE_TOKEN="your_key"
+
+
+
