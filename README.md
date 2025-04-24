@@ -1,18 +1,19 @@
-terminal 1
+# Project Setup Guide
+
+## Terminal 1: Frontend Setup
+```bash
 cd frontend
 npm install
 npm start
 
-terminal 2
+## Terminal 2: Backend Setup
 cd backend
 python -m venv venv
-venv\Scripts\activate
-python app.py
 
-=>Activate virtual environment
-For Windows:
+# Activate virtual environment
+# Windows:
 venv\Scripts\activate
-For macOS/Linux:
+# macOS/Linux:
 source venv/bin/activate
 
 python app.py
