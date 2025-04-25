@@ -14,7 +14,12 @@ import {
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const BACKEND_URL = "http://54.152.59.108:5000";
+// This will dynamically get the frontend's current hostname and use the same hostname for backend
+// but with port 5000 instead of whatever port the frontend is using
+const getBackendUrl = () => {
+  const currentUrl = window.location.hostname;
+  return `http://${currentUrl}:5000`;
+};
 
 const PathFinderPro = () => {
   const [messages, setMessages] = useState([]);
@@ -24,6 +29,12 @@ const PathFinderPro = () => {
   const [isProcessing, setIsProcessing] = useState(false);
   const [error, setError] = useState(null);
   const messagesEndRef = useRef(null);
+  const [backendUrl, setBackendUrl] = useState("");
+
+  // Set backend URL when component mounts
+  useEffect(() => {
+    setBackendUrl(getBackendUrl());
+  }, []);
 
   // Initial welcome message
   useEffect(() => {
@@ -63,7 +74,7 @@ const PathFinderPro = () => {
     setError(null);
 
     try {
-      const response = await fetch(`${BACKEND_URL}/api/chat`, {
+      const response = await fetch(`${backendUrl}/api/chat`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
